@@ -3,106 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohamed Omar Hussien | Portfolio</title>
+
+    <title>Mohamed Omar | Machine Learning Developer</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header>
-    <nav>
-        <h2>Mohamed Omar</h2>
-        <div>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
-</header>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MO<span>.</span></div>
 
-<section class="hero">
-    <h1>Hi, I'm Mohamed Omar Hussien</h1>
-    <h2>Software Developer & Machine Learning Enthusiast</h2>
-    <p>
-        BIS Student interested in Web Development, Machine Learning,
-        and building practical technology solutions.
-    </p>
-    <a class="btn" href="#projects">View My Projects</a>
-</section>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        I am a second-year BIS student with an interest in software development,
-        web development, and artificial intelligence. I enjoy building practical
-        projects and improving my programming and Machine Learning skills.
-    </p>
-</section>
+            <button class="menu-btn">☰</button>
+        </nav>
+    </header>
 
-<section id="skills">
-    <h2>My Skills</h2>
 
-    <div class="skills">
-        <span>HTML5</span>
-        <span>CSS3</span>
-        <span>JavaScript</span>
-        <span>Python</span>
-        <span>Machine Learning</span>
-        <span>Streamlit</span>
-        <span>WordPress</span>
-        <span>Data Analysis</span>
-    </div>
-</section>
+    <!-- Hero -->
+    <section id="home" class="hero">
 
-<section id="projects">
-    <h2>My Projects</h2>
+        <div class="hero-content">
 
-    <div class="projects">
+            <p class="small-title">MACHINE LEARNING DEVELOPER</p>
 
-        <div class="card">
-            <h3>Diabetes Prediction App</h3>
-            <p>
-                A Machine Learning classification project that predicts
-                whether a patient is likely to have diabetes based on
-                health and lifestyle factors.
+            <h1>
+                Turning Data Into
+                <span>Smart Predictions.</span>
+            </h1>
+
+            <p class="hero-text">
+                I build practical Machine Learning solutions using Python
+                and deploy them as simple, user-friendly web applications
+                with Streamlit.
             </p>
-            <a href="#" target="_blank">View Project</a>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary">View Projects</a>
+                <a href="#contact" class="btn secondary">Let's Work Together</a>
+            </div>
+
         </div>
 
-        <div class="card">
-            <h3>AI Impact on Students</h3>
-            <p>
-                A Machine Learning regression project that predicts
-                students' expected Post-GPA using academic, behavioral,
-                and AI-related factors.
-            </p>
-            <a href="#" target="_blank">View Project</a>
+        <div class="hero-card">
+            <div class="code-card">
+
+                <div class="code-top">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <p><span class="purple">model</span> = ML_Model()</p>
+                <p><span class="purple">model</span>.train(data)</p>
+                <p><span class="purple">result</span> = model.predict()</p>
+                <p><span class="green">print</span>(result)</p>
+
+                <div class="success">
+                    ✓ Model deployed successfully
+                </div>
+
+            </div>
         </div>
 
-        <div class="card">
-            <h3>Cats and Dogs Classification</h3>
-            <p>
-                An image classification project using Deep Learning
-                and CNN techniques to classify cats and dogs.
-            </p>
-            <a href="#" target="_blank">View Project</a>
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="section">
+
+        <div class="section-title">
+            <p>ABOUT ME</p>
+            <h2>Building practical solutions with data.</h2>
         </div>
 
-    </div>
-</section>
+        <div class="about-grid">
 
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p>I'm open to learning opportunities, freelance projects, and collaboration.</p>
-    <p><strong>Email:</strong> Add your email here</p>
-</section>
+            <div class="about-text">
 
-<footer>
-    <p>© 2026 Mohamed Omar Hussien. All Rights Reserved.</p>
-</footer>
+                <p>
+                    I am a BIS student interested in Machine Learning,
+                    Data Analysis, and practical AI solutions.
+                </p>
 
-<script src="script.js"></script>
+                <p>
+                    I use Python to build, train, and evaluate Machine
+                    Learning models and turn them into simple applications
+                    that users can actually interact with.
+                </p>
 
-</body>
-</html>
+                <p>
+                    My goal is to
