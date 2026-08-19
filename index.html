@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,86 +11,161 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">MO<span>.</span></div>
+    <!-- ================= NAVBAR ================= -->
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <header class="navbar">
 
-            <button class="menu-btn">☰</button>
+        <a href="#home" class="logo">
+            MO<span>.</span>
+        </a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
         </nav>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
     </header>
 
 
-    <!-- Hero -->
+    <!-- ================= HERO ================= -->
+
     <section id="home" class="hero">
 
         <div class="hero-content">
 
-            <p class="small-title">MACHINE LEARNING DEVELOPER</p>
+            <p class="eyebrow">
+                MACHINE LEARNING DEVELOPER
+            </p>
 
             <h1>
                 Turning Data Into
                 <span>Smart Predictions.</span>
             </h1>
 
-            <p class="hero-text">
+            <p class="hero-description">
                 I build practical Machine Learning solutions using Python
                 and deploy them as simple, user-friendly web applications
                 with Streamlit.
             </p>
 
             <div class="hero-buttons">
-                <a href="#projects" class="btn primary">View Projects</a>
-                <a href="#contact" class="btn secondary">Let's Work Together</a>
+
+                <a href="#projects" class="btn primary">
+                    View Projects
+                </a>
+
+                <a href="#contact" class="btn secondary">
+                    Let's Work Together
+                </a>
+
+            </div>
+
+            <div class="quick-info">
+
+                <div>
+                    <strong>Python</strong>
+                    <span>Development</span>
+                </div>
+
+                <div>
+                    <strong>ML</strong>
+                    <span>Solutions</span>
+                </div>
+
+                <div>
+                    <strong>Web</strong>
+                    <span>Deployment</span>
+                </div>
+
             </div>
 
         </div>
 
-        <div class="hero-card">
-            <div class="code-card">
 
-                <div class="code-top">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+        <!-- CODE CARD -->
+
+        <div class="hero-visual">
+
+            <div class="code-window">
+
+                <div class="window-top">
+
+                    <div class="dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <p>ml_model.py</p>
+
                 </div>
 
-                <p><span class="purple">model</span> = ML_Model()</p>
-                <p><span class="purple">model</span>.train(data)</p>
-                <p><span class="purple">result</span> = model.predict()</p>
-                <p><span class="green">print</span>(result)</p>
+                <div class="code">
+
+                    <p>
+                        <span class="keyword">model</span>
+                        = RandomForestClassifier()
+                    </p>
+
+                    <p>
+                        <span class="keyword">model</span>.fit(X_train, y_train)
+                    </p>
+
+                    <p>
+                        prediction =
+                        <span class="keyword">model</span>.predict(X_test)
+                    </p>
+
+                    <p>
+                        <span class="green">print</span>(prediction)
+                    </p>
+
+                </div>
 
                 <div class="success">
-                    ✓ Model deployed successfully
+                    ✓ Model ready for deployment
                 </div>
 
             </div>
+
         </div>
 
     </section>
 
 
-    <!-- About -->
+    <!-- ================= ABOUT ================= -->
+
     <section id="about" class="section">
 
-        <div class="section-title">
-            <p>ABOUT ME</p>
-            <h2>Building practical solutions with data.</h2>
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                ABOUT ME
+            </p>
+
+            <h2>
+                Building practical solutions
+                <span>with data.</span>
+            </h2>
+
         </div>
+
 
         <div class="about-grid">
 
@@ -107,4 +183,466 @@
                 </p>
 
                 <p>
-                    My goal is to
+                    My goal is to help businesses turn their data into
+                    useful predictions and better data-driven decisions.
+                </p>
+
+            </div>
+
+
+            <div class="about-box">
+
+                <div class="about-item">
+                    <span>01</span>
+                    <div>
+                        <h3>Build</h3>
+                        <p>Develop practical ML models.</p>
+                    </div>
+                </div>
+
+                <div class="about-item">
+                    <span>02</span>
+                    <div>
+                        <h3>Evaluate</h3>
+                        <p>Compare performance and select the best model.</p>
+                    </div>
+                </div>
+
+                <div class="about-item">
+                    <span>03</span>
+                    <div>
+                        <h3>Deploy</h3>
+                        <p>Turn models into simple web applications.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+
+    <section id="services" class="section dark">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                SERVICES
+            </p>
+
+            <h2>
+                What I can
+                <span>help with.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="service-grid">
+
+            <article class="service-card">
+
+                <div class="service-number">
+                    01
+                </div>
+
+                <h3>
+                    Machine Learning
+                </h3>
+
+                <p>
+                    Building practical models for prediction,
+                    classification, and data-driven problems.
+                </p>
+
+                <div class="service-tags">
+                    Python · Scikit-learn
+                </div>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-number">
+                    02
+                </div>
+
+                <h3>
+                    Model Evaluation
+                </h3>
+
+                <p>
+                    Comparing models and evaluating performance
+                    to select the most suitable solution.
+                </p>
+
+                <div class="service-tags">
+                    Accuracy · Evaluation
+                </div>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-number">
+                    03
+                </div>
+
+                <h3>
+                    Streamlit Apps
+                </h3>
+
+                <p>
+                    Deploying Machine Learning models as simple
+                    and user-friendly web applications.
+                </p>
+
+                <div class="service-tags">
+                    Streamlit · Deployment
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects" class="section">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                SELECTED WORK
+            </p>
+
+            <h2>
+                Projects & <span>Practice.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+
+            <!-- PROJECT 1 -->
+
+            <article class="project-card">
+
+                <div class="project-top">
+
+                    <span class="project-category">
+                        MACHINE LEARNING
+                    </span>
+
+                    <span class="project-number">
+                        01
+                    </span>
+
+                </div>
+
+                <h3>
+                    Diabetes Prediction
+                </h3>
+
+                <p>
+                    Built and evaluated Machine Learning models
+                    for diabetes prediction and selected the
+                    best-performing model.
+                </p>
+
+                <div class="project-tags">
+
+                    <span>Python</span>
+                    <span>Scikit-learn</span>
+                    <span>ML</span>
+
+                </div>
+
+                <button
+                    class="project-btn"
+                    onclick="openProject('diabetes')">
+
+                    View Details →
+
+                </button>
+
+            </article>
+
+
+            <!-- PROJECT 2 -->
+
+            <article class="project-card">
+
+                <div class="project-top">
+
+                    <span class="project-category">
+                        ML + WEB APP
+                    </span>
+
+                    <span class="project-number">
+                        02
+                    </span>
+
+                </div>
+
+                <h3>
+                    Student GPA Prediction
+                </h3>
+
+                <p>
+                    Developed a Machine Learning pipeline to
+                    predict student GPA and deployed it using
+                    Streamlit.
+                </p>
+
+                <div class="project-tags">
+
+                    <span>Python</span>
+                    <span>Pipeline</span>
+                    <span>Streamlit</span>
+
+                </div>
+
+                <button
+                    class="project-btn"
+                    onclick="openProject('gpa')">
+
+                    View Details →
+
+                </button>
+
+            </article>
+
+
+            <!-- PROJECT 3 -->
+
+            <article class="project-card">
+
+                <div class="project-top">
+
+                    <span class="project-category">
+                        CLASSIFICATION
+                    </span>
+
+                    <span class="project-number">
+                        03
+                    </span>
+
+                </div>
+
+                <h3>
+                    Classification Models
+                </h3>
+
+                <p>
+                    Compared KNN, Naive Bayes, and Decision Tree
+                    models and evaluated their performance.
+                </p>
+
+                <div class="project-tags">
+
+                    <span>KNN</span>
+                    <span>Naive Bayes</span>
+                    <span>Decision Tree</span>
+
+                </div>
+
+                <button
+                    class="project-btn"
+                    onclick="openProject('classification')">
+
+                    View Details →
+
+                </button>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills" class="section dark">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                TECH STACK
+            </p>
+
+            <h2>
+                Tools I <span>work with.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+            <div class="skill">
+                Python
+            </div>
+
+            <div class="skill">
+                Pandas
+            </div>
+
+            <div class="skill">
+                NumPy
+            </div>
+
+            <div class="skill">
+                Scikit-learn
+            </div>
+
+            <div class="skill">
+                Machine Learning
+            </div>
+
+            <div class="skill">
+                Data Analysis
+            </div>
+
+            <div class="skill">
+                Streamlit
+            </div>
+
+            <div class="skill">
+                HTML
+            </div>
+
+            <div class="skill">
+                CSS
+            </div>
+
+            <div class="skill">
+                JavaScript
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact">
+
+        <p class="eyebrow">
+            CONTACT
+        </p>
+
+        <h2>
+            Have a data problem?
+            <span>Let's build a solution.</span>
+        </h2>
+
+        <p>
+            I'm interested in practical Machine Learning projects,
+            data-driven solutions, and simple web applications.
+        </p>
+
+        <a
+            href="mailto:your-email@example.com"
+            class="btn primary">
+
+            Get In Touch
+
+        </a>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            MO<span>.</span>
+        </div>
+
+        <p>
+            Mohamed Omar · Machine Learning Developer
+        </p>
+
+        <p class="copyright">
+            © 2026 Mohamed Omar. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- ================= PROJECT MODAL ================= -->
+
+    <div id="projectModal" class="modal">
+
+        <div class="modal-content">
+
+            <button
+                class="close-btn"
+                onclick="closeProject()">
+
+                ×
+
+            </button>
+
+            <p id="modalCategory" class="eyebrow"></p>
+
+            <h2 id="modalTitle"></h2>
+
+            <div class="modal-line"></div>
+
+            <div class="modal-section">
+
+                <h4>Problem</h4>
+
+                <p id="modalProblem"></p>
+
+            </div>
+
+            <div class="modal-section">
+
+                <h4>Action</h4>
+
+                <p id="modalAction"></p>
+
+            </div>
+
+            <div class="modal-section">
+
+                <h4>Method</h4>
+
+                <p id="modalMethod"></p>
+
+            </div>
+
+            <div class="modal-section">
+
+                <h4>Result</h4>
+
+                <p id="modalResult"></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
